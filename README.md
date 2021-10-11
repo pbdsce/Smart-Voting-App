@@ -7,7 +7,7 @@ Traditional elections satisfy neither citizens nor political authorities in rece
 We propose a Blockchain based solution for solving various problems faced in the voting process. This project is a simple attempt to design and build an electronic voting system; where we make use of *Solidity Smart Contracts* to create a decentralized voting application (DApp). 
 
 
-Our implementation consists of a web interface to allow user to interact with the blockchain, rest api to handle required records of data. For a private blockchain, we've used go-based Ethereum implementation-[geth](https://geth.ethereum.org/docs/).
+Our implementation consists of a web interface to allow user to interact with the blockchain, rest api to handle required records of data. 
 
 This project is inspired by [this paper](https://skemman.is/bitstream/1946/31161/1/Research-Paper-BBEVS.pdf). 
 
@@ -59,7 +59,7 @@ The database maintains 3 tables viz, candidate data, voter data and contract add
 
 ### Blockchain
 
-The blockchain is established using the geth program. Geth is the go-based implementation of Ethereum protocol. We create a private p2p network of all voting machines, miners and eci portal. We created our own genesis description which would be needed to connect to our network. 
+We create a private p2p network of all voting machines, miners and eci portal. We created our own genesis description which would be needed to connect to our network. 
 
 
 ## Screen Shots:
