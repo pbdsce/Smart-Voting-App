@@ -65,6 +65,8 @@ We create a private p2p network of all voting machines, miners and eci portal. W
 
 
 ### Voter Interface
-
+![Screen_1](https://cdn.discordapp.com/attachments/781248113440587807/897206074971676682/vote_1.png)
+![Screen_2](https://cdn.discordapp.com/attachments/781248113440587807/897206072949997568/vote_2.png)
 
 ### Election Commission Interface
+![Screen_2](https://cdn.discordapp.com/attachments/781248113440587807/897206069221290045/vote_3.png)
