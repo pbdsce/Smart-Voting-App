@@ -1,4 +1,4 @@
-# Smart-Voting-App
+# Electronic Voting System using Blockchain and Smart Contracts
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
@@ -35,7 +35,6 @@ Ultimately our project converges to a Decentralized Web application(). The compo
  the election creation smart contract is what is used to deploy the ballots on the blockchain. Only the ECI representative, operating the ECI portal client can connect to this contract. This contract takes input as the database of all candidates of respective districts and deploys ballots for every district onto the blockchain. This contract also has a function which returns the addresses of the deployed ballots, so they can be used by the voting machines later.
 
 
-
 ### Web clients
 There are two web clients in this project viz the ECI portal and the voting machine. Both of these clients require communication using both http and rpc protocols, hence make use of api/libraries such as XMLHttpRequest and web3.js
 
@@ -48,7 +47,7 @@ Lastly, the portal makes use the address stored in table, to access the ballots 
 
 2. The Voting machine interface.
 
-The voting machine interface would first verify the voters' eligibility. For this, the machine would input the voter id and fingerprint signature from the voter. This data is hashed and compared with the voter database for authentication. Eligible voters are given access to the ballot, where the can cast their vote. The interface is simple and provides instructions in several languages. The interaction with the ballot is done by using web3 ipc protocol which would connect to the node on the machine. The web app interacts with the ballot smart contract using web3js and thus sends vote as a transaction.
+The voting machine interface would first verify the voters' eligibility. For this, the machine would input the voter id signature from the voter. This data is hashed and compared with the voter database for authentication. Eligible voters are given access to the ballot, where the can cast their vote. The interface is simple and provides instructions in several languages. The interaction with the ballot is done by using web3 ipc protocol which would connect to the node on the machine. The web app interacts with the ballot smart contract using web3js and thus sends vote as a transaction.
 
 ### Voter Authentication Service
 
