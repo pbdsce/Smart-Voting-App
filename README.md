@@ -2,12 +2,12 @@
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-Traditional elections satisfy neither citizens nor political authorities in recent years. They are not fully secure since it is easy to attack votes. It also threatens privacy and transparency of voters. Additionally, it takes too much time to count the votes. 
+In recent years, traditional elections have failed to satisfy either citizens or political authorities. They are not secure since attacking votes is easy and also threatens voters' privacy and transparency. Furthermore, counting the votes takes too long. 
 
-We propose a Blockchain based solution for solving various problems faced in the voting process. This project is a simple attempt to design and build an electronic voting system; where we make use of *Solidity Smart Contracts* to create a decentralized voting application (DApp). 
+We propose a Blockchain-based solution for solving various problems faced in the voting process. This project is a simple attempt to design and build an electronic voting system; where we make use of *Solidity Smart Contracts* to create a decentralized voting application (DApp). 
 
 
-Our implementation consists of a web interface to allow user to interact with the blockchain, rest api to handle required records of data. 
+Our implementation consists of a web interface to allow users to interact with the blockchain, rest API to handle required records of data. 
 
 This project is inspired by [this paper](https://skemman.is/bitstream/1946/31161/1/Research-Paper-BBEVS.pdf). 
 
@@ -43,11 +43,11 @@ There are two web clients in this project viz the ECI portal and the voting mach
 The ECI portal has several functions. First, it has to register eligible voters. For this, a table consisting of required voter data is created using this functionality. this data includes a hash of voter id and fingerprint and the voters' district. For each registered voter, this data is collected and maintained in a database.
 Secondly, to create a database of candidates of respective districts, another functionality is added. This would create a table of candidate data which will be used to load the ballots later.
 Third, this portal allows the ECI official to start the election, by specifying the candidates and the time duration. This would make use of election creation smart which would intern deploy the Ballots. The Addresses of these deployed ballots are maintained in a separate table for future use.
-Lastly, the portal makes use the address stored in table, to access the ballots to monitor the votes; thereby declare the winner of the election.
+Lastly, the portal makes use of the address stored in the table, to access the ballots to monitor the votes; thereby declaring the winner of the election.
 
 2. The Voting machine interface.
 
-The voting machine interface would first verify the voters' eligibility. For this, the machine would input the voter id signature from the voter. This data is hashed and compared with the voter database for authentication. Eligible voters are given access to the ballot, where the can cast their vote. The interface is simple and provides instructions in several languages. The interaction with the ballot is done by using web3 ipc protocol which would connect to the node on the machine. The web app interacts with the ballot smart contract using web3js and thus sends vote as a transaction.
+The voting machine interface would first verify the voters' eligibility. For this, the machine would input the voter id signature from the voter. This data is hashed and compared with the voter database for authentication. Eligible voters are given access to the ballot, where they can cast their vote. The interface is simple and provides instructions in several languages. The interaction with the ballot is done by using web3 IPC protocol which would connect to the node on the machine. The web app interacts with the ballot smart contract using web3js and thus sends votes as a transaction.
 
 ### Voter Authentication Service
 
